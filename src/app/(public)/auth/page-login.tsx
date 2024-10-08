@@ -117,7 +117,6 @@ export function PageLogin() {
         pr={{ base: '0.2em', lg: '6em' }}
         mb={'2em'}
         mt={'2em'}
-        overflow={'auto'}
       >
         <Image src={logo.src} alt="logo" w={180} />
 
