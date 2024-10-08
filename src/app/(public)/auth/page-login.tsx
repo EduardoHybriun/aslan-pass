@@ -26,6 +26,7 @@ export function PageLogin() {
         flexDirection={'column'}
         pl={'4em'}
         pr={'3em'}
+        position={"relative"}
         >
         <Box>
           <Text 
@@ -53,7 +54,55 @@ export function PageLogin() {
                   Fazer Login
               </Button>
           </Stack>
-        </Box>  
+        </Box>
+        {/* --------- circle 1 ------------ */}
+        <Box
+          bg={'none'}
+          border={'3px solid #FFFFFF'}
+          w={'20%'}
+          h={'35%'}
+          position={"fixed"}
+          top={"-4.8em"}
+          right={{base: '40%', lg:'46%'}}
+          borderRadius={'50%'}
+          opacity={'30%'}   
+        />  
+        {/* --------- circle 2 ------------ */}
+        <Box
+          bg={'none'}
+          border={'3px solid #FFFFFF'}
+          w={'20%'}
+          h={'35%'}
+          position={"fixed"}
+          top={"-8.8em"}
+          right={{base: '50%', lg:'50%'}}
+          borderRadius={'50%'}
+          opacity={'30%'}   
+        /> 
+        {/* --------- circle 3 ------------ */}
+        <Box
+          bg={'none'}
+          border={'3px solid #FFFFFF'}
+          w={'20%'}
+          h={'35%'}
+          position={"fixed"}
+          bottom={'-6em'}
+          left={{base: '50%', lg:'-8%'}}
+          borderRadius={'50%'}
+          opacity={'30%'}   
+        /> 
+        {/* --------- circle 3 ------------ */}
+        <Box
+          bg={'none'}
+          border={'3px solid #FFFFFF'}
+          w={'20%'}
+          h={'35%'}
+          position={"fixed"}
+          bottom={'-8em'}
+          left={{base: '50%', lg:'-4%'}}
+          borderRadius={'50%'}
+          opacity={'30%'}   
+        /> 
       </Box>
 
       {/* Box Branco */}
