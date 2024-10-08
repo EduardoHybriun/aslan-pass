@@ -41,8 +41,8 @@ export function Forms() {
         if (emptyFields.length > 0 || !isChecked) {
             toast({
                 title: "Erro de registro.",
-                description: emptyFields.length > 0 
-                    ? "Por favor, preencha todos os campos obrigatórios." 
+                description: emptyFields.length > 0
+                    ? "Por favor, preencha todos os campos obrigatórios."
                     : "Você deve concordar com os Termos de Uso e Política de Privacidade.",
                 status: "error",
                 duration: 5000,
@@ -62,7 +62,7 @@ export function Forms() {
     };
 
     return (
-        <Box w="75%" flexDirection={'column'}>
+        <Box w={{ base: '75%', lg: "100%" }} flexDirection={'column'}>
             <InputGroupField formValues={formValues} handleChange={handleChange} /> {/* Passando handleChange */}
             <Switches />
             <CheckBox handleChange={handleChange} isChecked={isChecked} /> {/* Passando props necessárias */}

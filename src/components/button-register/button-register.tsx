@@ -7,11 +7,11 @@ interface ButtonRegisterProps {
 export function ButtonRegister({ handleSubmit }: ButtonRegisterProps) { // Usando a propriedade
     return (
         <Box w="100%" flexDirection={'column'} mt={'1em'}>
-            <Button 
+            <Button
                 onClick={handleSubmit} // Vinculando a função handleSubmit ao evento onClick
-                bg={"#F7C921"} 
-                color={"#FFFFFF"} 
-                w={"100%"} 
+                bg={"#F7C921"}
+                color={"#FFFFFF"}
+                w={"100%"}
                 borderRadius={"12px"}
                 _hover="none"
             >

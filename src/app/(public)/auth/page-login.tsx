@@ -1,4 +1,4 @@
-import { Box, Container, Button, Stack, Text, Image, Checkbox, background} from "@chakra-ui/react";
+import { Box, Container, Button, Stack, Text, Image, Checkbox, background } from "@chakra-ui/react";
 
 import { Forms } from "@/components/forms/forms";
 
@@ -12,24 +12,24 @@ export function PageLogin() {
       h="100vh"
       m={0}
       p={0}
-      overflowY={'hidden'}
       fontFamily="var(--font-roboto)"
+      overflow={{ base: "auto", md: "hidden" }}
     >
       {/* Box Amarelo */}
-      <Box 
-        bg="#F7C921" 
-        w="100%" 
-        h="100%" 
-        display={{ base: 'none', md: 'flex' }}
+      <Box
+        bg="#F7C921"
+        w="50%"
+        h="100%"
+        display={{ base: 'none', lg: 'flex' }}
         justifyContent={'center'}
-        alignItems={"center"} 
+        alignItems={"center"}
         flexDirection={'column'}
         pl={'4em'}
         pr={'3em'}
         position={"relative"}
-        >
+      >
         <Box>
-          <Text 
+          <Text
             fontSize={'4xl'}
             fontWeight={'extrabold'}
             color={'#FFFFFF'}
@@ -40,19 +40,19 @@ export function PageLogin() {
             Faça login e confira nossos benefícios e novidades.
           </Text>
           <Stack direction='row' spacing={4} align='center'>
-              <Button 
-                bg={'#FFFFFF'} 
-                color={'#000000'} 
-                fontWeight={'medium'}
-                textAlign={'center'}
-                px={2}
-                mt={2}
-                py={2}
-                mb={2}
-                rounded={"xl"}
-                variant='outline'>
-                  Fazer Login
-              </Button>
+            <Button
+              bg={'#FFFFFF'}
+              color={'#000000'}
+              fontWeight={'medium'}
+              textAlign={'center'}
+              px={2}
+              mt={2}
+              py={2}
+              mb={2}
+              rounded={"xl"}
+              variant='outline'>
+              Fazer Login
+            </Button>
           </Stack>
         </Box>
         {/* --------- circle 1 ------------ */}
@@ -63,10 +63,10 @@ export function PageLogin() {
           h={'35%'}
           position={"fixed"}
           top={"-4.8em"}
-          right={{base: '40%', lg:'46%'}}
+          right={{ base: '40%', lg: '46%' }}
           borderRadius={'50%'}
-          opacity={'30%'}   
-        />  
+          opacity={'30%'}
+        />
         {/* --------- circle 2 ------------ */}
         <Box
           bg={'none'}
@@ -75,10 +75,10 @@ export function PageLogin() {
           h={'35%'}
           position={"fixed"}
           top={"-8.8em"}
-          right={{base: '50%', lg:'50%'}}
+          right={{ base: '50%', lg: '50%' }}
           borderRadius={'50%'}
-          opacity={'30%'}   
-        /> 
+          opacity={'30%'}
+        />
         {/* --------- circle 3 ------------ */}
         <Box
           bg={'none'}
@@ -87,10 +87,10 @@ export function PageLogin() {
           h={'35%'}
           position={"fixed"}
           bottom={'-6em'}
-          left={{base: '50%', lg:'-8%'}}
+          left={{ base: '50%', lg: '-8%' }}
           borderRadius={'50%'}
-          opacity={'30%'}   
-        /> 
+          opacity={'30%'}
+        />
         {/* --------- circle 3 ------------ */}
         <Box
           bg={'none'}
@@ -99,29 +99,30 @@ export function PageLogin() {
           h={'35%'}
           position={"fixed"}
           bottom={'-8em'}
-          left={{base: '50%', lg:'-4%'}}
+          left={{ base: '50%', lg: '-4%' }}
           borderRadius={'50%'}
-          opacity={'30%'}   
-        /> 
+          opacity={'30%'}
+        />
       </Box>
 
       {/* Box Branco */}
-      <Box 
-        bg="#FFFFFF" 
-        w="100%" 
+      <Box
+        bg="#FFFFFF"
+        w={{ base: '100%', lg: "50%" }}
         h="100%"
-        display={'flex'} 
-        alignItems={"center"} 
+        display={'flex'}
+        alignItems={"center"}
         flexDirection={'column'}
-        pl={{base:'0.2em', lg:'6em'}}
-        pr={{base:'0.2em', lg:'6em'}}
-        mb={16}
-        mt={'4em'}
+        pl={{ base: '0.2em', lg: '6em' }}
+        pr={{ base: '0.2em', lg: '6em' }}
+        mb={'2em'}
+        mt={'2em'}
+        overflow={'auto'}
       >
         <Image src={logo.src} alt="logo" w={180} />
-        
-        <Box w="75%" mt={'2em'}>
-          <Text 
+
+        <Box w="75%" mt={'1em'}>
+          <Text
             fontSize={'2xl'}
             fontWeight={'extrabold'}
             color={'#000000'}
@@ -134,7 +135,7 @@ export function PageLogin() {
         </Box>
 
         <Forms />
-        
+
       </Box>
     </Container>
   );
